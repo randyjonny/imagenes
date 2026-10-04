@@ -1,22 +1,435 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <main>
-    <title>My first web page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Descubre HTML, CSS y JavaScript y aprende cómo funciona el desarrollo web.">
+
+    <title>WEBVERSE | El universo del desarrollo web</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hola Mundo</h1>
-    <p>HTML es el lenguaje de marcado estándar que se usa para crear y estructurar el contenido de las páginas web.¿Qué
-        es y para qué sirve?Estructura base: Funciona como el esqueleto de un sitio web.Organización: Indica al
-        navegador dónde van los títulos, párrafos, imágenes y enlaces.No es programación: Es un lenguaje de marcas
-        basado en etiquetas, no un lenguaje de programación.</p>
-    <!-- TODO: Agregar enlaces de imagenes -->
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">W</span>
+            WEBVERSE<span class="dot">.</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#sobre">Sobre la web</a>
+        </nav>
+
+        <a href="#tecnologias" class="nav-button">Explorar <span>↗</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+            ☰
+        </button>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    EXPLORANDO EL UNIVERSO DIGITAL
+                </div>
+
+                <h1>
+                    El futuro de la web
+                    comienza con
+                    <span class="gradient-text">tres tecnologías.</span>
+                </h1>
+
+                <p>
+                    Descubre los lenguajes que dan vida a Internet.
+                    Aprende cómo HTML estructura, CSS transforma y
+                    JavaScript da movimiento al mundo digital.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#tecnologias" class="primary-button">
+                        Descubrir tecnologías →
+                    </a>
+
+                    <a href="#sobre" class="secondary-button">
+                        Conocer más
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>HTML</strong>
+                        <span>Estructura</span>
+                    </div>
+
+                    <div>
+                        <strong>CSS</strong>
+                        <span>Diseño</span>
+                    </div>
+
+                    <div>
+                        <strong>JS</strong>
+                        <span>Interacción</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="code-window">
+
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>index.html</span>
+                    </div>
+
+                    <div class="code-content">
+                        <p><span class="code-purple">&lt;html&gt;</span></p>
+                        <p class="indent"><span class="code-purple">&lt;head&gt;</span></p>
+                        <p class="indent-two"><span class="code-blue">&lt;title&gt;</span>My Web<span class="code-blue">&lt;/title&gt;</span></p>
+                        <p class="indent"><span class="code-purple">&lt;/head&gt;</span></p>
+                        <p class="indent"><span class="code-purple">&lt;body&gt;</span></p>
+                        <p class="indent-two"><span class="code-pink">&lt;h1&gt;</span>Hello World!<span class="code-pink">&lt;/h1&gt;</span></p>
+                        <p class="indent-two"><span class="code-pink">&lt;p&gt;</span>Welcome to the web.<span class="code-pink">&lt;/p&gt;</span></p>
+                        <p class="indent"><span class="code-purple">&lt;/body&gt;</span></p>
+                        <p><span class="code-purple">&lt;/html&gt;</span></p>
+                    </div>
+
+                    <div class="code-footer">
+                        <span>●</span> SYSTEM ONLINE
+                        <span class="code-version">WEB 3.0</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-tag tag-html">HTML</div>
+                <div class="floating-tag tag-css">CSS</div>
+                <div class="floating-tag tag-js">JS</div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                SCROLL PARA EXPLORAR <span>↓</span>
+            </div>
+
+        </section>
+
+
+        <!-- TECNOLOGÍAS -->
+
+        <section class="technologies section" id="tecnologias">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">LOS PILARES DE LA WEB</span>
+
+                <h2>
+                    Tres lenguajes.
+                    <span class="gradient-text">Un universo de posibilidades.</span>
+                </h2>
+
+                <p>
+                    Cada tecnología cumple una función esencial en la
+                    construcción de experiencias digitales.
+                </p>
+
+            </div>
+
+
+            <div class="cards-container">
+
+                <!-- HTML -->
+
+                <article class="tech-card html-card">
+
+                    <div class="card-top">
+                        <span class="tech-icon html-icon">5</span>
+                        <span class="card-number">01 / 03</span>
+                    </div>
+
+                    <span class="tech-label">LA ESTRUCTURA</span>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        HyperText Markup Language es el lenguaje de marcado
+                        que define la estructura y el contenido de una página web.
+                    </p>
+
+                    <div class="example-box">
+                        <span>Ejemplo básico</span>
+                        <code>&lt;h1&gt;Hola mundo&lt;/h1&gt;</code>
+                    </div>
+
+                    <div class="card-tags">
+                        <span>Etiquetas</span>
+                        <span>Elementos</span>
+                        <span>Contenido</span>
+                    </div>
+
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML"
+                       target="_blank" rel="noopener noreferrer" class="learn-link">
+                        Aprender HTML ↗
+                    </a>
+
+                </article>
+
+
+                <!-- CSS -->
+
+                <article class="tech-card css-card">
+
+                    <div class="card-top">
+                        <span class="tech-icon css-icon">3</span>
+                        <span class="card-number">02 / 03</span>
+                    </div>
+
+                    <span class="tech-label">LA APARIENCIA</span>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        Cascading Style Sheets permite diseñar y personalizar
+                        páginas web mediante colores, tamaños, espacios y animaciones.
+                    </p>
+
+                    <div class="example-box">
+                        <span>Ejemplo básico</span>
+                        <code>h1 { color: #8b5cf6; }</code>
+                    </div>
+
+                    <div class="card-tags">
+                        <span>Colores</span>
+                        <span>Diseño</span>
+                        <span>Animaciones</span>
+                    </div>
+
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS"
+                       target="_blank" rel="noopener noreferrer" class="learn-link">
+                        Aprender CSS ↗
+                    </a>
+
+                </article>
+
+
+                <!-- JAVASCRIPT -->
+
+                <article class="tech-card js-card">
+
+                    <div class="card-top">
+                        <span class="tech-icon js-icon">JS</span>
+                        <span class="card-number">03 / 03</span>
+                    </div>
+
+                    <span class="tech-label">LA INTERACTIVIDAD</span>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        JavaScript es un lenguaje de programación que permite
+                        crear interacciones, funcionalidades y experiencias dinámicas.
+                    </p>
+
+                    <div class="example-box">
+                        <span>Ejemplo básico</span>
+                        <code>console.log("Hello World!");</code>
+                    </div>
+
+                    <div class="card-tags">
+                        <span>Funciones</span>
+                        <span>Eventos</span>
+                        <span>Lógica</span>
+                    </div>
+
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                       target="_blank" rel="noopener noreferrer" class="learn-link">
+                        Aprender JavaScript ↗
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE LA WEB -->
+
+        <section class="about section" id="sobre">
+
+            <div class="about-content">
+
+                <span class="eyebrow">ENTENDIENDO INTERNET</span>
+
+                <h2>
+                    ¿Cómo se construye
+                    una página web?
+                </h2>
+
+                <p>
+                    Imagina que una página web es una casa.
+                    HTML construye sus paredes y habitaciones,
+                    CSS se encarga de su decoración y JavaScript
+                    permite que sus elementos interactúen.
+                </p>
+
+                <p>
+                    Las tres tecnologías trabajan juntas para
+                    transformar simples documentos en experiencias
+                    digitales completas.
+                </p>
+
+            </div>
+
+
+            <div class="house-visual">
+
+                <div class="house-layer layer-html">
+                    <span>01</span>
+                    <div>
+                        <strong>HTML</strong>
+                        <small>La estructura</small>
+                    </div>
+                    <span>▤</span>
+                </div>
+
+                <div class="house-layer layer-css">
+                    <span>02</span>
+                    <div>
+                        <strong>CSS</strong>
+                        <small>El diseño</small>
+                    </div>
+                    <span>◈</span>
+                </div>
+
+                <div class="house-layer layer-js">
+                    <span>03</span>
+                    <div>
+                        <strong>JavaScript</strong>
+                        <small>La interacción</small>
+                    </div>
+                    <span>✳</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEMOSTRACIÓN INTERACTIVA -->
+
+        <section class="interactive-section section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">EXPERIMENTA CON EL CÓDIGO</span>
+
+                <h2>
+                    La magia sucede
+                    <span class="gradient-text">cuando interactúas.</span>
+                </h2>
+
+                <p>
+                    Prueba una pequeña demostración de lo que JavaScript
+                    puede hacer dentro de una página web.
+                </p>
+
+            </div>
+
+            <div class="demo-card">
+
+                <div class="demo-info">
+                    <span class="demo-label">LIVE DEMO</span>
+                    <h3>Controla la experiencia</h3>
+                    <p>
+                        Presiona el botón y observa cómo JavaScript
+                        modifica el contenido de la página.
+                    </p>
+
+                    <button id="demoButton" class="primary-button">
+                        Activar interacción ✨
+                    </button>
+                </div>
+
+                <div class="demo-screen" id="demoScreen">
+                    <div class="demo-circle">✦</div>
+                    <h3 id="demoTitle">Hola, desarrollador.</h3>
+                    <p id="demoText">Aquí es donde comienza la interacción.</p>
+                    <span class="demo-status" id="demoStatus">ESPERANDO ACCIÓN...</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FRASE FINAL -->
+
+        <section class="final-section">
+
+            <div class="final-glow"></div>
+
+            <span class="eyebrow">TU VIAJE COMIENZA AQUÍ</span>
+
+            <h2>
+                El siguiente gran proyecto
+                puede ser <span class="gradient-text">el tuyo.</span>
+            </h2>
+
+            <p>
+                Cada línea de código es una oportunidad para crear algo nuevo.
+            </p>
+
+            <a href="#inicio" class="primary-button">
+                Volver al inicio ↑
+            </a>
+
+        </section>
+
     </main>
-    <h2>HTML y CSS</h2>
-    <p>¿Qué es HTML?Es el <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Lenguaje de Marcado de Hipertexto</a>.Crea la base de la página con etiquetas como títulos, párrafos e imágenes.Organiza la información para que el navegador la entienda.¿Qué es CSS?Significa Hojas de Estilo en Cascada.Controla los colores, las fuentes, los espacios y las posiciones de los elementos.Modifica el diseño visual de lo que creaste en HTML sin cambiar el contenido.Si gustas, dime:¿Tienes experiencia previa programando o estás empezando desde cero?¿Quieres que te muestre un ejemplo práctico de código para crear una página básica?</p>
-    <img src="https://images.tynker.com/blog/wp-content/uploads/20230608134157/Untitled-design-1.png" alt="HTML y CSS">
-    <h1>HTML y CSS</h1>
-    <img src="imagenes/webhtml.jpg" alt="HTML y CSS">
-    </body>
+
+
+    <footer class="footer">
+
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">W</span>
+            WEBVERSE<span class="dot">.</span>
+        </a>
+
+        <p>Explorando el universo del desarrollo web.</p>
+
+        <span>© <span id="year"></span> WEBVERSE. Creado con HTML, CSS y JS.</span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
